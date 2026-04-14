@@ -43,5 +43,5 @@ In this current generation, phishing, malware and credential theft remain to be 
 - 🔄 There is a **GitHub CI** — automatic build verification on push / pull request
 
 ## This is a Screenshot of what the ChatBot Application looks like when you run it: 
-
+![CI Workflow Screenshot]("C:\Users\JUNIOR MASILELA\source\repos\CyberSecurityAwarenessChatBot\Screenshot of a CI workflow in GitHub Actions.png").
 
