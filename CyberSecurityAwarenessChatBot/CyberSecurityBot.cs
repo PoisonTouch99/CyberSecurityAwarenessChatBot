@@ -117,7 +117,7 @@ namespace CyberSecurityAwarenessChatBot
             TypePrint("\nI'd love to chat with you, but first, may I kindly know your name?", ConsoleColor.Cyan);// This code prompts the user for their name.
             do
             {
-                Console.Write("\n(^_^) Please enter your name -> ");// Personalized prompt for user input
+                Console.Write("\n(^_^) Please enter your name > ");// Personalized prompt for user input
                 userName = Console.ReadLine()?.Trim() ?? string.Empty;// Trim whitespace and handle null input gracefully
 
                 if (string.IsNullOrWhiteSpace(userName))
