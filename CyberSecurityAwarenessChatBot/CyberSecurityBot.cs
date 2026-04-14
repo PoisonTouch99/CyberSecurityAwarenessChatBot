@@ -40,7 +40,7 @@ namespace CyberSecurityAwarenessChatBot
         */
         private void PlayVoiceGreeting()
         {
-            string audioPath = Path.Combine(AppContext.BaseDirectory, audioFileName);
+            string audioPath = Path.Combine(AppContext.BaseDirectory, audioFileName);// Construct the full path to the WAV file
 
             if (File.Exists(audioPath))
             {
@@ -48,7 +48,7 @@ namespace CyberSecurityAwarenessChatBot
                 {
                     SoundPlayer player = new SoundPlayer(audioPath);// Load the WAV file
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
-                    Console.WriteLine("         ...Now playing personalized voice greeting...");
+                    Console.WriteLine("         ...Now playing personalized voice greeting...");// This code provides feedback to the user that the voice greeting is being played, enhancing the user experience with audio feedback.
                     Console.WriteLine("((>*------------*------------(>*<)------------*-----------*<))");
                     Console.ResetColor();
                     player.PlaySync(); // Synchronous so greeting finishes before text appears
