@@ -158,7 +158,7 @@ namespace CyberSecurityAwarenessChatBot
             TypePrint("---------------------------------\n", ConsoleColor.Green);
 
             // This code informs users that they can type 'exit' or 'quit' to end the chat session, providing a clear and user-friendly way to exit the chatbot interaction.
-            TypePrint("\nType 'exit' or 'quit' anytime to stop.\n", ConsoleColor.Green);
+            TypePrint("\nType 'exit' or 'quit' anytime to stop the application.\n", ConsoleColor.Green);
         }
 
         // The main chat loop continuously prompts the user for input, validates it, and generates responses based on predefined keywords.
@@ -212,7 +212,7 @@ namespace CyberSecurityAwarenessChatBot
             This code provides a detailed response about the chatbot's purpose and capabilities when the user asks about its purpose or identity, 
             clearly explaining that it is a Cyber Security Awareness Bot designed to educate users on various online safety topics.
             */
-            else if (lowerInput.Contains("your purpose") || lowerInput.Contains("who are you"))
+            else if (lowerInput.Contains("your purpose") || lowerInput.Contains("who are you") || lowerInput.Contains("what is your function"))
             {
                 return $"I am a Cyber Security Awareness Bot. My purpose is to teach you how to stay safe online, {userName}. I cover passwords, phishing, safe browsing, malware, and more!\n";
             }
@@ -237,7 +237,7 @@ namespace CyberSecurityAwarenessChatBot
             }
 
             // This code provides a detailed response about phishing when the user asks about it, including how to spot and avoid phishing attempts, such as checking email senders, hovering over links, and looking for HTTPS.
-            else if (lowerInput.Contains("phishing") || lowerInput.Contains("a scam"))
+            else if (lowerInput.Contains("phishing") || lowerInput.Contains("scam"))
             {
                 return $"Phishing is one of the most common attacks, {userName}. Phishing (also known as a scam) is a type of cybercrime where attackers impersonate reputable entities via email, text or social media to deceive individuals into revealing sensitive information such as passwords, credit card numbers or login credentials.\n" +
                         "\nHere's how to spot and avoid it:\n" +
@@ -292,7 +292,7 @@ namespace CyberSecurityAwarenessChatBot
             else
             {
                 // Default graceful response for unsupported queries
-                return $"Hmmmm...('_') I didn't quite understand that, {userName}. Could you rephrase your question? (Try asking about passwords, phishing, safe browsing, two-factor authentication or malware)\n";
+                return $"Sorry but I didn't quite understand that, {userName}. Could you rephrase your question? (Try asking about passwords, phishing, safe browsing, two-factor authentication or malware)\n";
             }
         }
 
