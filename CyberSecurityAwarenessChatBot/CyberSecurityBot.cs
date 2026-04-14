@@ -48,8 +48,8 @@ namespace CyberSecurityAwarenessChatBot
                 {
                     SoundPlayer player = new SoundPlayer(audioPath);// Load the WAV file
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
-                    Console.WriteLine("         ...Now playing personalized voice greeting...");// This code provides feedback to the user that the voice greeting is being played, enhancing the user experience with audio feedback.
-                    Console.WriteLine("((>*------------*------------(>*<)------------*-----------*<))");
+                    Console.WriteLine("          >>>      ...Now playing personalized voice greeting...     <<<");// This code provides feedback to the user that the voice greeting is being played, enhancing the user experience with audio feedback.
+                    Console.WriteLine("((>*-----------------*------------------(>*<)------------------*----------------*<))");
                     Console.ResetColor();
                     player.PlaySync(); // Synchronous so greeting finishes before text appears
                 }
