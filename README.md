@@ -44,7 +44,7 @@ In this current generation, phishing, malware and credential theft remain to be 
 
 ## 🔄 GitHub Actions CI Workflow
 
-![GitHub Actions CI](images/github-actions-ci.jpg)
+![GitHub Actions CI](workflow.jpg)
 
 *Screenshot showing successful GitHub Actions CI build*
 
